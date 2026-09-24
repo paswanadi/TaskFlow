@@ -80,6 +80,7 @@
             btnadd.TabIndex = 4;
             btnadd.Text = "Add";
             btnadd.UseVisualStyleBackColor = true;
+            btnadd.Click += btnadd_Click;
             // 
             // btnDelete
             // 
