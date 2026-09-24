@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtTitle = new TextBox();
             label2 = new Label();
             cmbCategory = new ComboBox();
             btnadd = new Button();
@@ -46,13 +46,12 @@
             label1.TabIndex = 0;
             label1.Text = "Title";
             // 
-            // textBox1
+            // txtTitle
             // 
-            textBox1.Location = new Point(286, 63);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(211, 27);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "txtTitle";
+            txtTitle.Location = new Point(286, 67);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(211, 27);
+            txtTitle.TabIndex = 1;
             // 
             // label2
             // 
@@ -109,7 +108,7 @@
             Controls.Add(btnadd);
             Controls.Add(cmbCategory);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtTitle);
             Controls.Add(label1);
             Name = "Form1";
             Text = "TaskFlow";
@@ -120,7 +119,7 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtTitle;
         private Label label2;
         private ComboBox cmbCategory;
         public Button btnadd;
