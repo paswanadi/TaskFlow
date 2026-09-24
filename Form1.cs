@@ -2,7 +2,7 @@ namespace TaskFlow
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +27,12 @@ namespace TaskFlow
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (lstTasks.SelectedItem != null)
+                lstTasks.Items.Remove(lstTasks.SelectedItem);
         }
     }
 }
