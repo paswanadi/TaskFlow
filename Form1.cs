@@ -6,6 +6,7 @@ namespace TaskFlow
         public Form1()
         {
             InitializeComponent();
+            cmbCategory.SelectedIndex = 0;
         }
 
         private void btnadd_Click(object sender, EventArgs e)
