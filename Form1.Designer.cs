@@ -66,7 +66,7 @@
             // 
             cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Items.AddRange(new object[] { "Study", "Work" });
+            cmbCategory.Items.AddRange(new object[] { "Study", "Work", "Workout ", "Movies" });
             cmbCategory.Location = new Point(326, 159);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(151, 28);
