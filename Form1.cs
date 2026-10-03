@@ -42,5 +42,10 @@ namespace TaskFlow
             if (lstTasks.SelectedItem != null)
                 lstTasks.Items[lstTasks.SelectedIndex] += " (Done)";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lstTasks.Items.Clear();
+        }
     }
 }

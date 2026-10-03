@@ -36,6 +36,7 @@
             btnDelete = new Button();
             lstTasks = new ListBox();
             btnDone = new Button();
+            btnclear = new Button();
             SuspendLayout();
             // 
             // label1
@@ -111,11 +112,22 @@
             btnDone.UseVisualStyleBackColor = true;
             btnDone.Click += btnDone_Click;
             // 
+            // btnclear
+            // 
+            btnclear.Location = new Point(618, 334);
+            btnclear.Name = "btnclear";
+            btnclear.Size = new Size(94, 29);
+            btnclear.TabIndex = 8;
+            btnclear.Text = "Clear All";
+            btnclear.UseVisualStyleBackColor = true;
+            btnclear.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnclear);
             Controls.Add(btnDone);
             Controls.Add(lstTasks);
             Controls.Add(btnDelete);
@@ -140,5 +152,6 @@
         private Button btnDelete;
         private ListBox lstTasks;
         private Button btnDone;
+        private Button btnclear;
     }
 }
