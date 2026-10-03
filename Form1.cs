@@ -22,6 +22,7 @@ namespace TaskFlow
 
                 task.Title = txtTitle.Text;
                 lstTasks.Items.Add(task.GetInfo());
+                txtTitle.Clear();
             }
             catch (Exception ex)
             {
