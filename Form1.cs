@@ -36,5 +36,11 @@ namespace TaskFlow
             if (lstTasks.SelectedItem != null)
                 lstTasks.Items.Remove(lstTasks.SelectedItem);
         }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            if (lstTasks.SelectedItem != null)
+                lstTasks.Items[lstTasks.SelectedIndex] += " (Done)";
+        }
     }
 }

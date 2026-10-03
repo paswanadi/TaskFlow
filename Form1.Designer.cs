@@ -35,6 +35,7 @@
             btnadd = new Button();
             btnDelete = new Button();
             lstTasks = new ListBox();
+            btnDone = new Button();
             SuspendLayout();
             // 
             // label1
@@ -97,14 +98,25 @@
             lstTasks.FormattingEnabled = true;
             lstTasks.Location = new Point(327, 334);
             lstTasks.Name = "lstTasks";
-            lstTasks.Size = new Size(150, 104);
+            lstTasks.Size = new Size(216, 104);
             lstTasks.TabIndex = 6;
+            // 
+            // btnDone
+            // 
+            btnDone.Location = new Point(665, 269);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(94, 29);
+            btnDone.TabIndex = 7;
+            btnDone.Text = "Done";
+            btnDone.UseVisualStyleBackColor = true;
+            btnDone.Click += btnDone_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDone);
             Controls.Add(lstTasks);
             Controls.Add(btnDelete);
             Controls.Add(btnadd);
@@ -127,5 +139,6 @@
         public Button btnadd;
         private Button btnDelete;
         private ListBox lstTasks;
+        private Button btnDone;
     }
 }
