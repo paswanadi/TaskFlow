@@ -126,6 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(800, 450);
             Controls.Add(btnclear);
             Controls.Add(btnDone);
@@ -138,6 +139,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "TaskFlow";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
