@@ -31,4 +31,20 @@ namespace TaskFlow
             return "Work: " + Title;
         }
     }
+
+    public class WorkoutTask : MyTask
+    {
+        public override string GetInfo()
+        {
+            return "Workout: " + Title;
+        }
+    }
+
+    public class MovieTask : MyTask
+    {
+        public override string GetInfo()
+        {
+            return "Movie: " + Title;
+        }
+    }
 }

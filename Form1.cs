@@ -17,9 +17,17 @@ namespace TaskFlow
                 if (txtTitle.Text == "")
                     throw new Exception("Enter a title");
 
+                
+
                 MyTask task = new WorkTask();
                 if (cmbCategory.Text == "Study")
                     task = new StudyTask();
+                if (cmbCategory.Text == "Workout")
+                    task = new WorkoutTask();
+                if (cmbCategory.Text == "Movies")
+                    task = new MovieTask();
+
+              
 
                 task.Title = txtTitle.Text;
                 lstTasks.Items.Add(task.GetInfo());
