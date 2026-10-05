@@ -52,7 +52,7 @@ The Milestone 1 proposal is in the `docs` folder.
 - Microsoft Visual Studio
 - Git and GitHub
 - Microsoft Learn – Windows Forms docs: https://learn.microsoft.com/dotnet/desktop/winforms/
-- Claude (Anthropic) – GenAI tool used for planning, step-by-step guidance, explaining OOP concepts, fixing Git errors, and help drafting the milestone documents
+- Claude (Anthropic) – GenAI tool used for planning, step-by-step guidance, explaining OOP concepts, fixing Git errors.
 
 ## Author
 
