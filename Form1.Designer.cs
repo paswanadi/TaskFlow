@@ -34,9 +34,14 @@
             cmbCategory = new ComboBox();
             btnadd = new Button();
             btnDelete = new Button();
-            lstTasks = new ListBox();
             btnDone = new Button();
             btnclear = new Button();
+            label3 = new Label();
+            label4 = new Label();
+            dtpStart = new DateTimePicker();
+            dtpEnd = new DateTimePicker();
+            dgvTasks = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvTasks).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -68,7 +73,7 @@
             // 
             cmbCategory.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Items.AddRange(new object[] { "Study", "Work", "Workout ", "Movies" });
+            cmbCategory.Items.AddRange(new object[] { "Study", "Work", "Workout ", "Movies", "Dummy" });
             cmbCategory.Location = new Point(326, 159);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(151, 28);
@@ -94,14 +99,6 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
-            // lstTasks
-            // 
-            lstTasks.FormattingEnabled = true;
-            lstTasks.Location = new Point(327, 334);
-            lstTasks.Name = "lstTasks";
-            lstTasks.Size = new Size(216, 104);
-            lstTasks.TabIndex = 6;
-            // 
             // btnDone
             // 
             btnDone.Location = new Point(665, 269);
@@ -122,15 +119,60 @@
             btnclear.UseVisualStyleBackColor = true;
             btnclear.Click += button1_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(545, 39);
+            label3.Name = "label3";
+            label3.Size = new Size(76, 20);
+            label3.TabIndex = 9;
+            label3.Text = "Start Date";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(551, 162);
+            label4.Name = "label4";
+            label4.Size = new Size(70, 20);
+            label4.TabIndex = 10;
+            label4.Text = "End Date";
+            // 
+            // dtpStart
+            // 
+            dtpStart.Location = new Point(545, 81);
+            dtpStart.Name = "dtpStart";
+            dtpStart.Size = new Size(250, 27);
+            dtpStart.TabIndex = 11;
+            // 
+            // dtpEnd
+            // 
+            dtpEnd.Location = new Point(545, 203);
+            dtpEnd.Name = "dtpEnd";
+            dtpEnd.Size = new Size(250, 27);
+            dtpEnd.TabIndex = 12;
+            // 
+            // dgvTasks
+            // 
+            dgvTasks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTasks.Location = new Point(180, 423);
+            dgvTasks.Name = "dgvTasks";
+            dgvTasks.RowHeadersWidth = 51;
+            dgvTasks.Size = new Size(774, 211);
+            dgvTasks.TabIndex = 13;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1051, 623);
+            Controls.Add(dgvTasks);
+            Controls.Add(dtpEnd);
+            Controls.Add(dtpStart);
+            Controls.Add(label4);
+            Controls.Add(label3);
             Controls.Add(btnclear);
             Controls.Add(btnDone);
-            Controls.Add(lstTasks);
             Controls.Add(btnDelete);
             Controls.Add(btnadd);
             Controls.Add(cmbCategory);
@@ -140,6 +182,7 @@
             Name = "Form1";
             Text = "TaskFlow";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvTasks).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,8 +195,12 @@
         private ComboBox cmbCategory;
         public Button btnadd;
         private Button btnDelete;
-        private ListBox lstTasks;
         private Button btnDone;
         private Button btnclear;
+        private Label label3;
+        private Label label4;
+        private DateTimePicker dtpStart;
+        private DateTimePicker dtpEnd;
+        private DataGridView dgvTasks;
     }
 }

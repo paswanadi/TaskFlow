@@ -1,6 +1,4 @@
-﻿using TaskFlow;
-
-namespace TaskFlow
+﻿namespace TaskFlow
 {
     public abstract class MyTask
     {
@@ -15,12 +13,11 @@ namespace TaskFlow
         public abstract string GetInfo();
     }
 
-
     public class StudyTask : MyTask
     {
         public override string GetInfo()
         {
-            return "Study: " + Title;
+            return "Study";
         }
     }
 
@@ -28,7 +25,7 @@ namespace TaskFlow
     {
         public override string GetInfo()
         {
-            return "Work: " + Title;
+            return "Work";
         }
     }
 
@@ -36,7 +33,7 @@ namespace TaskFlow
     {
         public override string GetInfo()
         {
-            return "Workout: " + Title;
+            return "Workout";
         }
     }
 
@@ -44,7 +41,15 @@ namespace TaskFlow
     {
         public override string GetInfo()
         {
-            return "Movie: " + Title;
+            return "Movies";
+        }
+    }
+
+    public class Dummy : MyTask 
+    {
+        public override string GetInfo()
+        {
+            return "Dummy";
         }
     }
 }
